@@ -3,6 +3,8 @@ from solver import numble_solve
 
 st.title("Numble Solver")
 
+st.write("Check out the daily Numble challenge: [https://numble.wtf/](https://numble.wtf/)")
+
 target = st.number_input("Enter target", min_value=0, value=0)
 
 def make_grid(cols,rows):
