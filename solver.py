@@ -75,7 +75,7 @@ def numble_solve(nums, target):
 
         # Check if we have a solution
         if target in expression[set_U]:
-            res = f"{expression[set_U][target]} = {target}"
-            return res[1:-1]
+            exp = expression[set_U][target]
+            return f"{exp[1:-1]} = {target}"
     
     return "No solution"
