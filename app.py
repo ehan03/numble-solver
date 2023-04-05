@@ -5,7 +5,7 @@ st.title("Numble Solver")
 
 st.write("Check out the daily Numble challenge: [https://numble.wtf/](https://numble.wtf/)")
 
-target = st.number_input("Enter target", min_value=100, value=None)
+target = st.number_input("Enter target", min_value=100)
 
 def make_grid(cols,rows):
     grid = [0]*cols
@@ -15,12 +15,12 @@ def make_grid(cols,rows):
     return grid
 
 mygrid = make_grid(2, 3)
-num1 = mygrid[0][0].number_input("Enter number 1", min_value=1, value=None)
-num2 = mygrid[0][1].number_input("Enter number 2", min_value=1, value=None)
-num3 = mygrid[0][2].number_input("Enter number 3", min_value=1, value=None)
-num4 = mygrid[1][0].number_input("Enter number 4", min_value=1, value=None)
-num5 = mygrid[1][1].number_input("Enter number 5", min_value=1, value=None)
-num6 = mygrid[1][2].number_input("Enter number 6", min_value=1, value=None)
+num1 = mygrid[0][0].number_input("Enter number 1", min_value=1)
+num2 = mygrid[0][1].number_input("Enter number 2", min_value=1)
+num3 = mygrid[0][2].number_input("Enter number 3", min_value=1)
+num4 = mygrid[1][0].number_input("Enter number 4", min_value=1)
+num5 = mygrid[1][1].number_input("Enter number 5", min_value=1)
+num6 = mygrid[1][2].number_input("Enter number 6", min_value=1)
 
 if st.button("Solve"):
     if target and num1 and num2 and num3 and num4 and num5 and num6:
