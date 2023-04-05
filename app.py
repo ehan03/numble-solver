@@ -1,4 +1,5 @@
 import streamlit as st
+import time
 from solver import numble_solve
 
 st.title("Numble Solver")
@@ -23,4 +24,8 @@ num5 = mygrid[1][1].number_input("Enter number 5", min_value=1)
 num6 = mygrid[1][2].number_input("Enter number 6", min_value=1)
 
 if st.button("Solve"):
-    st.write(f"Solution: {numble_solve([num1, num2, num3, num4, num5, num6], target)}")
+    start = time.time()
+    solution = numble_solve([num1, num2, num3, num4, num5, num6], target)
+    end = time.time()
+    st.write(f"Solution: {solution}")
+    st.write(f"Solved in {end-start:.2f} seconds")
