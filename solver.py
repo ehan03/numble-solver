@@ -9,8 +9,7 @@ def numble_solve(nums, target):
         str: A string of the solution, which is an expression
             that uses the 6 numbers and the operators +, -, *, /
             to evaluate to the target number. If there are multiple
-            solutions, return any one of them. If there is no solution,
-            return "No solution".
+            solutions, return any one of them.
     """
     # Here we use a bottom-up dynamic programming approach to essentially generate all possible
     # valid expressions for each subset of the 6 numbers
