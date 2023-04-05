@@ -65,7 +65,7 @@ def numble_solve(nums, target):
                         if val_L > val_R:
                             expression[set_U][val_L - val_R] = f"({expr_L} - {expr_R})"
 
-                        # Symmetry, avoid repeating
+                        # Symmetry
                         if set_A < set_B:
                             expression[set_U][val_L + val_R] = f"({expr_L} + {expr_R})"
                             expression[set_U][val_L * val_R] = f"({expr_L} * {expr_R})"
