@@ -23,6 +23,4 @@ num5 = mygrid[1][1].number_input("Enter number 5", min_value=1)
 num6 = mygrid[1][2].number_input("Enter number 6", min_value=1)
 
 if st.button("Solve"):
-    if target and num1 and num2 and num3 and num4 and num5 and num6:
-        st.write("Empty fields are not allowed")
     st.write(f"Solution: {numble_solve([num1, num2, num3, num4, num5, num6], target)}")
