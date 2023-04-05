@@ -82,4 +82,4 @@ def numble_solve(nums, target):
                 return f"{res[1:-1]} = {target}"
             return f"{res} = {target}"
     
-    return "No solution"
+    return "There is none lol"
