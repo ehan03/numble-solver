@@ -28,4 +28,4 @@ if st.button("Solve"):
     solution = numble_solve([num1, num2, num3, num4, num5, num6], target)
     end = time.time()
     st.write(f"Solution: {solution}")
-    st.write(f"Solved in {end-start:.2f} seconds")
+    st.write(f"Solved in {end-start:.5f} seconds")
