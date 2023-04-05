@@ -31,6 +31,8 @@ def numble_solve(nums, target):
     # Each key-value pair will be the value of the expression and the expression itself
     # Initialize the list with the 6 numbers on their own
     for i in range(6):
+        if nums[i] == target:
+            return f"{nums[i]} = {target}"
         expression[1 << i] = {nums[i]: str(nums[i])}
 
     # Let set_U be the set of numbers we are considering
